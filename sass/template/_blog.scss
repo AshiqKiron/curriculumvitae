@@ -1,0 +1,118 @@
+.blog_page {
+    overflow: hidden;
+
+    .blog-header {
+        text-align: center;
+
+        a {
+            @include link;
+
+            &:hover {
+                @include linkHover;
+            }
+        }
+    }
+
+    .posts-content .post-thumbnail {
+        opacity: 1;
+        transition: .5s ease all;
+
+        &:hover {
+            opacity: .8;
+            transition: .5s ease all;
+        }
+    }
+
+    .blog_wrap {
+        display: flex;
+    }
+
+    .other {
+        width: 20%;
+        padding-right: 5%;
+        font-size: 13px;
+
+        a {
+            @include link;
+            font-size: 13px;
+
+            &:hover {
+                @include linkHover;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        button, input[type="button"], input[type="reset"], input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            transition: .5s ease all;
+            border: 1px solid #333;
+            cursor: pointer;
+    
+            &:hover {
+                border: 1px solid #333;
+                color: #333;
+                transition: .5s ease all;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+
+
+.blog_pagination {
+    padding: 5% 5%;
+
+    a {
+        @include link;
+        font-weight: bold;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+    
+    a {
+        border: 1px solid #333;
+        padding: 2%;
+    }
+
+    a:nth-child(1)::before {
+        content:'<---  ';
+    }
+
+    a:nth-child(1) {
+        float: left;
+    }
+
+    a:nth-child(2) {
+        float: right;
+    }
+
+    a:nth-child(2)::after {
+        content:'  --->';
+    }
+}
+
+.clearfix {content: "";display: block;height: 0;clear: both;visibility: hidden;}
+
+
+@media screen and (min-width: 320px) and (max-width: 1100px)  {
+    .blog_page {
+    
+        .blog_wrap {
+            display: block;
+        }
+
+        .other {
+            width: 100%;
+            padding: 5% 10%;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+/*!
+Theme Name: CurriculumVitae
+Theme URI: http://asphaltthemes.com/curriculumvitae
+Author: Asphalt Themes
+Author URI: https://twitter.com/AshiqKiron
+Description: Professional WordPress CV theme, CurriculamVitae comes with Full width layout, easy Logo upload. Resumee is 100% responsive built with HTML5 and CSS3, it is SEO friendly, mobile optimized and retina ready, thoroughly tested by WordPress coding standard has clean and a bloat free code, you can flesh out free CV, CurriculamVitae or resume website. The best free WordPress CV theme 2018.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: curriculumvitae
+Tags: education, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, two-columns, three-columns, right-sidebar, flexible-header, custom-colors, custom-header, editor-style, featured-image-header, footer-widgets, full-width-template, theme-options, blog, portfolio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+CurriculumVitae is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+
+/*--------------------------------------------------------------
+# frontpage
+--------------------------------------------------------------*/
+@import "frontpage/frontpage";
+
+
+/*--------------------------------------------------------------
+# Pages & Posts
+--------------------------------------------------------------*/
+@import "template/site";
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+
+
+.totop {
+	padding: 10px;
+	display: none;
+	background: rgba(51, 51, 51, 0.05);
+	font-weight: bold;
+	color: black;
+	position: fixed;
+	height: 40px;
+	width: 40px !important;
+	bottom: 50px !important;
+	right: 20px;
+	border: 1px solid rgba(51, 51, 51, 0.1);
+	transition: 0.7s ease all;
+  }
+  
+
+  .totop:hover {
+	color: #333;
+	transition: 0.7s ease all;
+	background-color: #fff;
+	border: 1px solid #555;
+  }

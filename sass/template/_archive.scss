@@ -1,0 +1,52 @@
+.archive {
+    .page-header {
+        text-align: center;
+    }
+
+    a {
+        @include link;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+
+    .post-thumbnail {
+        border-bottom: none;
+
+        &:hover {
+            border-bottom: none;
+        }
+    }
+
+    .post-edit-link {
+        padding-left: 10px;
+    }
+}
+
+
+.posts-navigation {
+    padding: 5% 10%;
+
+    a {
+        @include link;
+        font-weight: bold;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+    
+    .nav-previous, .nav-next {
+        border: 1px solid #333;
+        padding: 2%;
+    }
+
+    .nav-previous::before {
+        content:'<---  ';
+    }
+
+    .nav-next::after {
+        content:'  --->';
+    }
+}

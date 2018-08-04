@@ -1,0 +1,29 @@
+.no-results {
+    text-align: center;
+    font-size: 16px;
+
+    .page-title {
+        font-size: 3em;
+    }
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+		background-color: #333;
+		color: #fff;
+		padding: 14px 20px;
+		transition: .5s ease all;
+		border: 1px solid #333;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid #333;
+			color: #333;
+			transition: .5s ease all;
+			background-color: transparent;
+		}
+    }
+    
+     input[type="search"] {
+         padding: .5em 2%;
+         vertical-align: middle
+     }
+}

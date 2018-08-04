@@ -1,0 +1,128 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+ /**************************************************
+ Frontpage Widgets  
+ **************************************************/
+@mixin Block {
+	padding: 0% 15%;
+	overflow: hidden;
+	line-height: 1.5em;
+	font-size: 13px;
+}
+
+@mixin blockWrap {
+	display:flex;
+    justify-content: flex-start;
+    padding: 0 5%;
+    background-color: #5dbb610f;
+}
+
+@mixin title {
+	font-size: 5.3em;
+    font-weight: 100;
+	margin-bottom: 10px;
+}
+
+
+@mixin titleAfter {
+	content: "_______________";
+    color: #333;
+    margin-left: 10px;
+    vertical-align: super;
+}
+
+@mixin num {
+	font-size: 30px;
+	letter-spacing: 5px;
+	font-weight: 300;
+}
+
+@mixin widgetTwo {
+	border-left: 2px solid #333;
+    padding-left: 5%;
+    overflow: hidden;
+    padding-bottom: 2%;
+}
+
+@mixin link {
+	text-decoration: none;
+    transition: .5s ease all;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+@mixin linkHover {
+	transition:.5s ease all;
+    color: #4CAF50;
+	border-bottom: 1px solid #4CAF50;
+}
+
+@mixin twoText {
+	font-size: 13px;
+}
+
+//responsive styles
+@mixin BlockResp {
+	padding: 0% 5%;
+	overflow: hidden;
+}
+
+@mixin widgetTwoResp {
+	border-left: 2px solid #333;
+    padding-left: 10%;
+    overflow: hidden;
+    padding-bottom: 2%;
+}
+
+@mixin blockWrapResp {
+	display: block;
+	padding: 2% 5%;
+	background-color: #5dbb610f;
+}
+
+@mixin titleAfterResp {
+	content: "" !important;
+	color: #333;
+	margin-left: 0;
+	vertical-align: super;
+	display: none !important;
+}
+
+@mixin titleResp {
+	font-size: 3em;
+	font-weight: 300;
+	margin-bottom: 0;
+	padding-top: 10%;
+	margin-top: 0;
+	padding-bottom: 5%;
+	text-align: center;
+	overflow: hidden;
+}

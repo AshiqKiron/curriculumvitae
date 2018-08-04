@@ -1,0 +1,168 @@
+.post_wrapper {
+    display: flex;
+    padding: 5% 10%;
+    font-size: 16px;
+
+    p {
+        font-size:  .9em;
+    }
+
+    a {
+        @include link;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+
+    .alignnone  {
+        border-bottom: none;
+    
+        &:hover {
+            border-bottom: none;
+        }
+    }
+
+    table {
+        margin: 0;
+        padding: 0;
+        border-spacing:0;
+    }
+
+    th, td {
+        border: 1px solid #eee;
+        padding: .5%;
+    }
+
+ 
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        transition: .5s ease all;
+        border: 1px solid #333;
+        cursor: pointer;
+    
+        &:hover {
+            border: 1px solid #333;
+            color: #333;
+            transition: .5s ease all;
+            background-color: transparent;
+        }
+    }
+
+    .entry-header {
+        max-width: 30%;
+        padding-right: 5%;
+        min-width: 30%;
+
+        .entry-meta, .entry-footer, .byline {
+            font-size: 13px;
+
+            a {
+                @include link;
+                font-weight: bold;
+
+                &:hover {
+                    @include linkHover;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+    }
+
+    .post-content {
+        max-width: 65%;
+        text-align: right;
+    }
+}
+
+.post-navigation {
+    padding: 5% 10%;
+
+    a {
+        @include link;
+        font-weight: bold;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+    
+    .nav-previous, .nav-next {
+        border: 1px solid #333;
+        padding: 2%;
+    }
+
+    .nav-previous::before {
+        content:'<---  ';
+    }
+
+    .nav-next::after {
+        content:'  --->';
+    }
+}
+
+.gallery-item a {
+    border-bottom: none;
+
+    &:hover {
+        border-bottom: none;
+    }
+}
+
+.comments-area {
+    padding: 0 10%;
+    font-size: 13px;
+
+    a {
+        @include link;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+
+    .edit-link {
+        padding-left: 10px;
+    }
+
+    .comment-body {
+        padding: 1% 0;
+    }
+
+    #submit {
+        background-color: #333;
+        color: #fff;
+        float: right;
+        padding: 20px;
+        transition: .5s ease all;
+        border: 1px solid #333;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid #333;
+            color: #333;
+            transition: .5s ease all;
+            background-color: transparent;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 1100px) {
+    .post_wrapper {
+        display: block;
+
+        .entry-header, .post-content {
+            width: 100%;
+            max-width: 100%;
+            padding: 6% 0;
+        }
+    }
+}

@@ -1,0 +1,186 @@
+.default-page-template {
+    padding: 5% 10%;
+
+    .entry-header {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    font-size: 13px;
+
+    a {
+        @include link;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+}
+
+.content_only_page {
+    padding: 5% 10%;
+
+    .entry-header {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    font-size: 13px;
+
+    a {
+        @include link;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+}
+
+
+.fullwidth_condensed_page {
+    padding: 5% 25%;
+
+    .entry-header {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    font-size: 13px;
+
+    a {
+        @include link;
+
+        &:hover {
+            @include linkHover;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .fullwidth_condensed_page {
+        padding: 5% 15%;
+    }
+}
+
+
+.header_only_page {
+    .entry-header {
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
+.left_sidebar_page {
+    display: flex;
+    padding: 5% 10%;
+    font-size: 13px;
+
+    .leftpage_sidebar_widget {
+        max-width: 25%;
+        padding-right: 5%;
+    }
+
+    a {
+		@include link;
+		font-size: 13px;
+
+		&:hover {
+			@include linkHover;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+		background-color: #333;
+		color: #fff;
+		padding: 10px 20px;
+		transition: .5s ease all;
+		border: 1px solid #333;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid #333;
+			color: #333;
+			transition: .5s ease all;
+			background-color: transparent;
+		}
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .left_sidebar_page {
+        flex-direction: column;
+        padding: 5% 10%;
+
+        .leftpage_sidebar_widget {
+            max-width: 100%;
+            order: 1;
+        }
+    }    
+}
+
+
+.right_sidebar_page {
+    display: flex;
+    padding: 5%;
+    font-size: 13px;
+
+    .rightpage_sidebar_widget {
+        max-width: 25%;
+        padding-left: 5%;
+    }
+
+    article {
+        max-width: 70%;
+    }
+
+    a {
+		@include link;
+		font-size: 13px;
+
+		&:hover {
+			@include linkHover;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+		background-color: #333;
+		color: #fff;
+		padding: 10px 20px;
+		transition: .5s ease all;
+		border: 1px solid #333;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid #333;
+			color: #333;
+			transition: .5s ease all;
+			background-color: transparent;
+		}
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .right_sidebar_page {
+        flex-direction: column;
+        padding: 5% 10%;
+
+        article {
+            max-width: 100%;
+        }
+
+        .rightpage_sidebar_widget {
+            max-width: 100%;
+            order: 1;
+        }
+    }    
+}
