@@ -61,7 +61,7 @@ final class curriculumvitae {
 				$manager,
 				'curriculumvitae',
 				array(
-					'title'    => esc_html__( 'curriculumvitae Pro', 'curriculumvitae' ),
+					'title'    => esc_html__( 'CurriculumVitae Pro', 'curriculumvitae' ),
 					'pro_text' => esc_html__( 'Go Pro', 'curriculumvitae' ),
 					'pro_url'  => esc_url('https://asphaltthemes.com/curriculumvitae')
 				)

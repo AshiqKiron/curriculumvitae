@@ -23,45 +23,6 @@
         }
     }
 
-    .blog_wrap {
-        display: flex;
-    }
-
-    .other {
-        width: 20%;
-        padding-right: 5%;
-        font-size: 13px;
-
-        a {
-            @include link;
-            font-size: 13px;
-
-            &:hover {
-                @include linkHover;
-            }
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        button, input[type="button"], input[type="reset"], input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            transition: .5s ease all;
-            border: 1px solid #333;
-            cursor: pointer;
-    
-            &:hover {
-                border: 1px solid #333;
-                color: #333;
-                transition: .5s ease all;
-                background-color: transparent;
-            }
-        }
-    }
 }
 
 

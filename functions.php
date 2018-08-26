@@ -107,40 +107,11 @@ add_action( 'after_setup_theme', 'curriculumvitae_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function curriculumvitae_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'curriculumvitae' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'curriculumvitae' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Blog Sidebar', 'curriculumvitae' ),
-		'id'            => 'sidebar-2',
-		'description'   => esc_html__( 'Add Blog Sidebar widgets here.', 'curriculumvitae' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer', 'curriculumvitae' ),
 		'id'            => 'footer-1',
 		'description'   => esc_html__( 'Add Footer Sidebar widgets here.', 'curriculumvitae' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Page Footer', 'curriculumvitae' ),
-		'id'            => 'footer-2',
-		'description'   => esc_html__( 'Add Footer widgets for Pages here.', 'curriculumvitae' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',

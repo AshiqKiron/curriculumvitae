@@ -42,19 +42,15 @@ get_header(); ?>
                           <?php
                           curriculumvitae_posted_on();?> <br>
                           
-                      </div><!-- .entry-meta -->
-                  <?php
-                  if ( is_singular() ) :
-                      the_title( '<a href="<?php the_permalink(); ?>"><h1 class="entry-title">', '</h1></a>' );
-                  else :
-                      the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-                  endif;
+                </div><!-- .entry-meta -->
+                
+                <h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></h1>
+                
 
-                  if ( 'post' === get_post_type() ) :
-                      ?>
+                  
                   <?php curriculumvitae_posted_by(); ?>
                   
-                  <?php endif; ?>
+                  
                   <footer class="entry-footer">
                   <?php curriculumvitae_entry_footer(); ?>
               </footer><!-- .entry-footer -->
@@ -90,9 +86,6 @@ get_header(); ?>
       <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'curriculumvitae'); ?></p>
     <?php endif; ?> 
     </section>
-     <div class="other">
-          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-2') ) :   endif; ?>
-     </div>
             
         </div>
 

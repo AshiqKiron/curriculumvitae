@@ -152,6 +152,7 @@
 			color: #333;
 			transition:.6s ease all;
 			border-bottom: 1px solid transparent;
+			box-sizing: border-box;
 
 			&:hover {
 				opacity: .5;
