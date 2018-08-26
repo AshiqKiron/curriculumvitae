@@ -4,9 +4,9 @@ Theme URI: http://asphaltthemes.com/curriculumvitae
 Author: Asphalt Themes
 Author URI: https://twitter.com/AshiqKiron
 Description: Professional WordPress CV theme, CurriculamVitae comes with Full width layout, easy Logo upload. Resumee is 100% responsive built with HTML5 and CSS3, it is SEO friendly, mobile optimized and retina ready, thoroughly tested by WordPress coding standard has clean and a bloat free code, you can flesh out free CV, CurriculamVitae or resume website. The best free WordPress CV theme 2018.
-Version: 0.0.1
+Version: 0.0.2
 License: GNU General Public License v2 or later
-License URI: LICENSE
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: curriculumvitae
 Tags: education, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, two-columns, three-columns, right-sidebar, flexible-header, custom-colors, custom-header, editor-style, featured-image-header, footer-widgets, full-width-template, theme-options, blog, portfolio
 
@@ -444,6 +444,8 @@ textarea {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1,
@@ -871,6 +873,8 @@ a:active {
     -webkit-transition: .6s ease all;
     transition: .6s ease all;
     border-bottom: 1px solid transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .site-header .main-navigation a:hover {
@@ -996,7 +1000,7 @@ a:active {
 }
 
 .education .one h3::after {
-    content: "_______________";
+    content: "_____________";
     color: #333;
     margin-left: 10px;
     vertical-align: super;
@@ -1073,7 +1077,7 @@ a:active {
 }
 
 .blog1 .one h3::after {
-    content: "_______________";
+    content: "_____________";
     color: #333;
     margin-left: 10px;
     vertical-align: super;
@@ -1585,63 +1589,6 @@ a:active {
     opacity: .8;
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
-}
-
-.blog_page .blog_wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.blog_page .other {
-    width: 20%;
-    padding-right: 5%;
-    font-size: 13px;
-}
-
-.blog_page .other a {
-    text-decoration: none;
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all;
-    color: #333;
-    border-bottom: 1px solid #eee;
-    font-size: 13px;
-}
-
-.blog_page .other a:hover {
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all;
-    color: #4CAF50;
-    border-bottom: 1px solid #4CAF50;
-}
-
-.blog_page .other ul {
-    margin: 0;
-    padding: 0;
-}
-
-.blog_page .other button,
-.blog_page .other input[type="button"],
-.blog_page .other input[type="reset"],
-.blog_page .other input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all;
-    border: 1px solid #333;
-    cursor: pointer;
-}
-
-.blog_page .other button:hover,
-.blog_page .other input[type="button"]:hover,
-.blog_page .other input[type="reset"]:hover,
-.blog_page .other input[type="submit"]:hover {
-    border: 1px solid #333;
-    color: #333;
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all;
-    background-color: transparent;
 }
 
 .blog_pagination {

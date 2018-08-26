@@ -36,9 +36,11 @@ CurriculamVitae is distributed under the terms of the GNU GPL
 
 * Changelog *
 
-#### 0.0.5 (---8-18, 2018)
-- Fixed Blog widget default text
-- Change: theme screenshot
+#### 0.0.2 ( 26gh August, 2018)
+- Removed: Blog sidebar
+- Fix: Other CSS issues
+- Delete: rlt.css file
+- Add: License URL
 
 
 #### 0.0.1 (4-8-18, 2018)
