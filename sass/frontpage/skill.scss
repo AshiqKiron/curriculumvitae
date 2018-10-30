@@ -1,0 +1,147 @@
+.skill {
+    @include Block;
+   .wrap {
+        @include blockWrap;
+    }
+
+    .one {
+        h3 {@include title;
+        }
+
+        h3::after {
+            @include titleAfter;
+        }
+
+        p {
+            @include num;
+        }
+    }
+
+    .two {
+        @include widgetTwo;
+ 
+        .text, h3 {
+            @include twoText;
+        }
+ 
+        .first {
+            padding: 10% 0 5%;
+
+        }
+
+        .skwrapper {
+            display: flex;
+            max-width: 100%;
+            flex-flow: row wrap;
+    
+            h3 {
+                padding: 0 5px;
+                transition: .5s ease all;
+    
+                &:hover {
+                    color:#4CAF50;
+                    transition: .5s ease all;
+                }
+            }
+        }
+ 
+        p {
+            @include twoText;
+            margin: 5px auto;
+        }
+ 
+        a {
+            @include link;
+ 
+            &:hover {
+                @include linkHover;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+    
+ .skill {
+        @include BlockResp;
+
+        .wrap {
+            @include blockWrapResp;
+        }
+
+        .two {
+            @include widgetTwoResp;
+
+            .text, h3, p {
+                
+                @include twoText;
+            }
+
+            h3::after {
+                @include titleAfterResp;
+            }
+
+        }
+
+        .one {
+            h3 {
+                @include titleResp;
+            }
+        }
+
+        .space {
+            display: none;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
+    .skill {
+        @include Block;
+    
+        .wrap {
+            @include blockWrap;
+        }
+    
+        .two {
+            @include widgetTwo;
+    
+            .text, p, h3 {
+                @include twoText;
+            }
+    
+        }
+    
+        .one {
+            h3 {
+                font-size: 35px;
+                font-weight: 300;
+                margin-bottom: 10px;
+            }
+    
+            h3::after {
+                content: "_______________";
+                color: #333;
+                margin-left: 10px;
+                vertical-align: super;
+    
+            }
+    
+            p {
+                font-size: 20px;
+                letter-spacing: 5px;
+                font-weight: 300;
+            }
+        }
+    
+        .space {
+            padding-top: 40px;
+            }
+        }
+}

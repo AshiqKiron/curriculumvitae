@@ -219,7 +219,7 @@ require get_template_directory() . '/inc/customizer/customizer-function.php';
  * Frontpage widgets
  */
 require get_template_directory() . '/inc/widgets/front-intro-one.php';
-require get_template_directory() . '/inc/widgets/front-education-one.php';
+require get_template_directory() . '/inc/widgets/front-skill-one.php';
 require get_template_directory() . '/inc/widgets/front-blog.php';
 require get_template_directory() . '/inc/defaults.php';
 

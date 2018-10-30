@@ -968,87 +968,6 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-## education layouts
---------------------------------------------------------------*/
-
-.space {
-    padding-top: 80px;
-}
-
-.education {
-    padding: 0% 15%;
-    overflow: hidden;
-    line-height: 1.5em;
-    font-size: 13px;
-}
-
-.education .wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    padding: 0 5%;
-    background-color: rgba(93, 187, 97, 0.05882);
-}
-
-.education .one h3 {
-    font-size: 5.3em;
-    font-weight: 100;
-    margin-bottom: 10px;
-}
-
-.education .one h3::after {
-    content: "_____________";
-    color: #333;
-    margin-left: 10px;
-    vertical-align: super;
-}
-
-.education .one p {
-    font-size: 30px;
-    letter-spacing: 5px;
-    font-weight: 300;
-}
-
-.education .two {
-    border-left: 2px solid #333;
-    padding-left: 5%;
-    overflow: hidden;
-    padding-bottom: 2%;
-}
-
-.education .two .text,
-.education .two h3 {
-    font-size: 13px;
-}
-
-.education .two .first {
-    padding: 2% 0 5%;
-}
-
-.education .two p {
-    font-size: 13px;
-    margin: 5px auto;
-}
-
-.education .two a {
-    text-decoration: none;
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all;
-    color: #333;
-    border-bottom: 1px solid #eee;
-}
-
-.education .two a:hover {
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all;
-    color: #4CAF50;
-    border-bottom: 1px solid #4CAF50;
-}
-
-/*--------------------------------------------------------------
 ## blog 
 --------------------------------------------------------------*/
 
@@ -1237,6 +1156,198 @@ a:active {
         font-weight: 300;
     }
     .blog1 .space {
+        padding-top: 40px;
+    }
+}
+
+/*--------------------------------------------------------------
+## skill 
+--------------------------------------------------------------*/
+
+.skill {
+    padding: 0% 15%;
+    overflow: hidden;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+
+.skill .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0 5%;
+    background-color: rgba(93, 187, 97, 0.05882);
+}
+
+.skill .one h3 {
+    font-size: 5.3em;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.skill .one h3::after {
+    content: "_____________";
+    color: #333;
+    margin-left: 10px;
+    vertical-align: super;
+}
+
+.skill .one p {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+.skill .two {
+    border-left: 2px solid #333;
+    padding-left: 5%;
+    overflow: hidden;
+    padding-bottom: 2%;
+}
+
+.skill .two .text,
+.skill .two h3 {
+    font-size: 13px;
+}
+
+.skill .two .first {
+    padding: 10% 0 5%;
+}
+
+.skill .two .skwrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.skill .two .skwrapper h3 {
+    padding: 0 5px;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+}
+
+.skill .two .skwrapper h3:hover {
+    color: #4CAF50;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+}
+
+.skill .two p {
+    font-size: 13px;
+    margin: 5px auto;
+}
+
+.skill .two a {
+    text-decoration: none;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.skill .two a:hover {
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+    color: #4CAF50;
+    border-bottom: 1px solid #4CAF50;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+    .skill {
+        padding: 0% 5%;
+        overflow: hidden;
+    }
+    .skill .wrap {
+        display: block;
+        padding: 2% 5%;
+        background-color: rgba(93, 187, 97, 0.05882);
+    }
+    .skill .two {
+        border-left: 2px solid #333;
+        padding-left: 10%;
+        overflow: hidden;
+        padding-bottom: 2%;
+    }
+    .skill .two .text,
+    .skill .two h3,
+    .skill .two p {
+        font-size: 13px;
+    }
+    .skill .two h3::after {
+        content: "" !important;
+        color: #333;
+        margin-left: 0;
+        vertical-align: super;
+        display: none !important;
+    }
+    .skill .one h3 {
+        font-size: 3em;
+        font-weight: 300;
+        margin-bottom: 0;
+        padding-top: 10%;
+        margin-top: 0;
+        padding-bottom: 5%;
+        text-align: center;
+        overflow: hidden;
+    }
+    .skill .space {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
+    .skill {
+        padding: 0% 15%;
+        overflow: hidden;
+        line-height: 1.5em;
+        font-size: 13px;
+    }
+    .skill .wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 0 5%;
+        background-color: rgba(93, 187, 97, 0.05882);
+    }
+    .skill .two {
+        border-left: 2px solid #333;
+        padding-left: 5%;
+        overflow: hidden;
+        padding-bottom: 2%;
+    }
+    .skill .two .text,
+    .skill .two p,
+    .skill .two h3 {
+        font-size: 13px;
+    }
+    .skill .one h3 {
+        font-size: 35px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .skill .one h3::after {
+        content: "_______________";
+        color: #333;
+        margin-left: 10px;
+        vertical-align: super;
+    }
+    .skill .one p {
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 300;
+    }
+    .skill .space {
         padding-top: 40px;
     }
 }

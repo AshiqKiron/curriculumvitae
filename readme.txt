@@ -22,7 +22,7 @@ Fully professional WordPress CV theme, You can use this theme to create online p
 Go to your WordPress Admin Panel & Log in (Ex: http://yourwebsite.com/wp-admin)
 Go to Appearance -> Themes -> Add New
 From top, Click on Upload Theme
-Choose the ZIP file youâ€™ve downloaded & Click Install Now
+Choose the ZIP file you’ve downloaded & Click Install Now
 Click on Activate to active the theme
 Installing The Theme via FTP
 
@@ -36,7 +36,7 @@ CurriculamVitae is distributed under the terms of the GNU GPL
 
 * Changelog *
 
-#### 0.0.3 ( 31st October, 2018)
+#### 0.0.3 ( 31th October2018)
 - Removed: education widget 
 - Add: skill widget
 - Add: readme.txt file
